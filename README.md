@@ -26,3 +26,8 @@
 - Use this :
 
         git config core.filemode false
+
+6. Update one branch from another
+
+        git checkout old-branch
+        get pull origin new-branch
