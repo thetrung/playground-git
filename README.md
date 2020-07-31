@@ -27,10 +27,15 @@
 
         git config core.filemode false
 
-6. Update one branch from another
+6. Update/Merge one branch from another
 
         git checkout old-branch
         get pull origin new-branch
+        
+- Merge from local branch :
+
+        git checkout dev
+        git merge my-work
 
 7. Recover lost commits within a day
 
