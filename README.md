@@ -31,3 +31,22 @@
 
         git checkout old-branch
         get pull origin new-branch
+
+7. Recover lost commits within a day
+
+- Use `git reflog` to check on what happen
+
+- Then use `git reset --hard <change>` again to reverse.
+
+        git reset --hard HEAD^
+        HEAD is now at 1a75c1d... added file1
+
+        $ cat file2
+        cat: file2: No such file or directory
+
+        $ git reflog
+        1a75c1d... HEAD@{0}: reset --hard HEAD^: updating HEAD
+        f6e5064... HEAD@{1}: commit: added file2
+
+        $ git reset --hard f6e5064
+        HEAD is now at f6e5064... added file2
