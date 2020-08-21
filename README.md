@@ -55,3 +55,8 @@
 
         $ git reset --hard f6e5064
         HEAD is now at f6e5064... added file2
+        
+8. Pull a certain branch from remote 
+
+        git branch -f remote_branch_name origin/remote_branch_name
+        git checkout remote_branch_name
