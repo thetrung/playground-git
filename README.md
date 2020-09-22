@@ -60,3 +60,7 @@
 
         git branch -f remote_branch_name origin/remote_branch_name
         git checkout remote_branch_name
+        
+9. Save credential 
+
+        git config --global credential.helper osxkeychain
