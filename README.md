@@ -14,6 +14,11 @@
 
         git rebase -i HEAD~N
         
+- Merge with 1st commit :
+
+        git rebase -i --root master
+        
+        
 4. Force delete pushed commits :
 
         git push -u -f origin <commit>:dev
