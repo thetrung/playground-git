@@ -13,6 +13,12 @@
 3. Merge N-commits into one or re-arrange them :
 
         git rebase -i HEAD~N
+
+* In case, we want to merge with fork/upstream :
+
+        git remote add upstream <....fork repo...>
+        git fetch upstream/main
+        git rebase -i upstream/main
         
 - Merge with 1st commit :
 
